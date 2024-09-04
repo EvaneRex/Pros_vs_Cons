@@ -1,0 +1,25 @@
+$boxColor: rgba(10, 45, 115, 0.50);
+$black:#000000;
+$white:#FFFFFF;
+
+
+//Mixins
+@mixin box{
+    background: $boxColor;
+    border-radius: 1.25rem;
+    padding: 1rem 2rem;
+    width: 90%;
+    height: auto;
+}
+
+@mixin heading{
+    color: $white;
+}
+@mixin txt{
+    color: $white;
+
+}
+@mixin btn{
+    background-color:$boxColor;
+    color: $white;
+}

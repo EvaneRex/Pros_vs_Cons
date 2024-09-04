@@ -1,0 +1,50 @@
+@use 'partial';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    .bg{
+        aspect-ratio: 16/9;
+        width: auto;
+        height: 100vh;
+        position: fixed;
+        z-index: -100;
+        object-fit:fill;
+        top:0;
+    }
+    #blur{
+        object-fit: fill;
+    }
+
+    .window{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .branch{
+            @include partial.box;
+            margin: 4rem 1rem;
+
+            #heading{
+                @include partial.heading;
+            }
+
+            #txt{
+                @include partial.txt;
+            }
+
+            #buttons-container{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                .btn{
+                     @include partial.btn;
+                }
+            }
+        }
+    }
+}
