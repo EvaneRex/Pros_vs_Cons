@@ -390,10 +390,23 @@ function scenarieStart(stepIndex) {
     }
 }
 
+//dice imgs
+const diceImages = {
+    1: 'img/terning_1.svg',
+    2: 'img/terning_2.svg',
+    3: 'img/terning_3.svg',
+    4: 'img/ternning_4.svg',
+    5: 'img/terning_5.svg',
+    6: 'img/terning_6.svg'
+};
+
 // Function to handle dice roll interruption
 function initiateDiceRoll(stepIndex) {
     heading_element.textContent = "Tag en chance!";
     txt_element.textContent = `Du har 3 forsøg til at slå en 6'er. Forsøg tilbage: ${attemptsLeft}`;
+
+    //displays the dice
+    document.getElementById('diceImage').style.display='block';
 
     const rollButton = document.createElement("button");
     rollButton.textContent = "Slå terningen";
@@ -402,6 +415,10 @@ function initiateDiceRoll(stepIndex) {
     rollButton.addEventListener("click", () => {
         const diceRoll = Math.floor(Math.random() * 6) + 1;
         document.getElementById('diceResult').innerHTML = `Du slog: ${diceRoll}`;
+
+        //updates the diceroll!
+        document.getElementById('diceImage').src = diceImages[diceRoll];
+
 
         if (diceRoll === 6) {
             // Success, give $25 and continue

@@ -28,11 +28,14 @@ body .window {
 body .window #playerMoney {
   color: #FFFFFF;
   font-size: 1.25rem;
+  word-break: keep-all;
+  color: #0A2D73;
+  font-weight: bold;
   text-align: right;
   margin: 4rem 2rem 0 2rem;
 }
 body .window .branch {
-  background: rgba(10, 45, 115, 0.5);
+  background: rgba(10, 45, 115, 0.6);
   border-radius: 1.25rem;
   padding: 1rem 2rem;
   width: 90%;
@@ -49,14 +52,30 @@ body .window .branch #heading {
 body .window .branch #txt {
   color: #FFFFFF;
   font-size: 1.25rem;
+  word-break: keep-all;
+}
+body .window .branch #diceResult {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  word-break: keep-all;
+  font-weight: bold;
+}
+body .window .branch #diceImage {
+  margin: 2rem auto 2rem auto;
+  height: 50%;
+  width: 50%;
 }
 body .window .branch #buttons-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 body .window .branch #buttons-container .btn {
-  background-color: rgba(10, 45, 115, 0.5);
+  background-color: rgba(10, 45, 115, 0.6);
   color: #FFFFFF;
   font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

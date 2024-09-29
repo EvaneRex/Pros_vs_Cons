@@ -27,10 +27,12 @@ body{
 
         #playerMoney{
             @include partial.txt;
+            color: #0A2D73;
+            font-weight: bold;
             text-align: right;
             margin: 4rem 2rem 0 2rem;
         }
-
+        
         .branch{
             @include partial.box;
 
@@ -44,14 +46,27 @@ body{
             #txt{
                 @include partial.txt;
             }
+            #diceResult {
+                @include partial.txt;
+                font-weight: bold;
+            }
+            #diceImage{
+                margin: 2rem auto 2rem auto;
+                height: 50%;
+                width: 50%;
 
+            }
             #buttons-container{
                 display: flex;
                 flex-direction: column;
                 gap: 0.5rem;
+                margin-bottom: 1rem;
 
                 .btn{
                      @include partial.btn;
+                     padding: 0.5rem 1rem;
+                     border-radius: 0.5rem;
+                     margin-top: 0.5rem;
                 }
             }
         }

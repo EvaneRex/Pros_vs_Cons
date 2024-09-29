@@ -17,9 +17,10 @@ $white:#FFFFFF;
     color: $white;
     font-size: 2rem;
 }
-@mixin txt{
-    color: $white;
+@mixin txt($color:$white){
+    color: $color;
     font-size: 1.25rem;
+    word-break: keep-all;
 
 }
 @mixin btn{
