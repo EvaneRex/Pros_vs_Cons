@@ -395,7 +395,7 @@ const diceImages = {
     1: 'img/terning_1.svg',
     2: 'img/terning_2.svg',
     3: 'img/terning_3.svg',
-    4: 'img/ternning_4.svg',
+    4: 'img/terning_4.svg',
     5: 'img/terning_5.svg',
     6: 'img/terning_6.svg'
 };
@@ -428,6 +428,8 @@ function initiateDiceRoll(stepIndex) {
             attemptsLeft = 3; // Reset the attempts for the next chance phase
             removeRollButton(rollButton); // Remove dice roll button
             proceedToNextStep(stepIndex); // Continue to next step
+            document.getElementById('diceImage').style.display = 'none';//removes dice again
+            document.getElementById('diceResult').innerHTML = '';//clears the diceresults from screen
         } else {
             // Decrement attempts left and check if any attempts remain
             attemptsLeft--;
@@ -439,6 +441,8 @@ function initiateDiceRoll(stepIndex) {
                 attemptsLeft = 3; // Reset the attempts for the next chance phase
                 removeRollButton(rollButton); // Remove dice roll button
                 proceedToNextStep(stepIndex); // Continue to next step
+                document.getElementById('diceImage').style.display = 'none';
+                document.getElementById('diceResult').innerHTML = '';
             }
         }
     });
