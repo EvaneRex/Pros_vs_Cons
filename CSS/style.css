@@ -78,4 +78,15 @@ body .window .branch #buttons-container .btn {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  body .window {
+    width: 60vw;
+  }
 }/*# sourceMappingURL=style.css.map */

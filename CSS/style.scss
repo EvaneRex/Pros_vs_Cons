@@ -17,8 +17,6 @@ body{
         filter: blur(3px);
         object-position: left;
     }
-
-
     .window{
         display: flex;
         flex-direction: column;
@@ -72,3 +70,15 @@ body{
         }
     }
 }
+@media screen and (min-width: 1000px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        .window{
+        width: 60vw;
+    }
+}
+}
+    
